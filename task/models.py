@@ -1,5 +1,6 @@
 from django.db import models
 from user.models import users
+
 priority_choice=(("high","high"),("medium","medium"),("low","low"))
 ctunit_choice=(("hours","hours"),("minutes","minutes"),("seconds","seconds"))
 state_choice=(("Incomplete","Incomplete"),("Complete","Complete"),("Ongoing","Ongoing"))
