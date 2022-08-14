@@ -8,3 +8,6 @@ class users(models.Model):
     password=models.CharField(max_length=20)
     token=models.UUIDField(null=True)
     creation=models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.username
