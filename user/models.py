@@ -6,4 +6,5 @@ class users(models.Model):
     last_name=models.CharField(max_length=20)
     username=models.CharField(max_length=20,unique=True)
     password=models.CharField(max_length=20)
+    token=models.UUIDField(null=True)
     creation=models.DateTimeField(auto_now_add=True)
